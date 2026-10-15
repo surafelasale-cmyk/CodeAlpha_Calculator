@@ -1,0 +1,38 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="calculator" aria-label="Calculator">
+      <section class="display" aria-live="polite" aria-label="Calculator display">
+        <div class="previous" id="previous-display"></div>
+        <div class="current" id="current-display">0</div>
+      </section>
+
+      <section class="keys" aria-label="Calculator buttons">
+        <button class="clear" data-action="clear" type="button">Clear</button>
+        <button class="operator" data-operation="divide" type="button" aria-label="Divide">/</button>
+        <button class="operator" data-operation="multiply" type="button" aria-label="Multiply">*</button>
+        <button class="operator" data-operation="subtract" type="button" aria-label="Subtract">-</button>
+        <button data-number="7" type="button">7</button>
+        <button data-number="8" type="button">8</button>
+        <button data-number="9" type="button">9</button>
+        <button class="operator" data-operation="add" type="button" aria-label="Add">+</button>
+        <button data-number="4" type="button">4</button>
+        <button data-number="5" type="button">5</button>
+        <button data-number="6" type="button">6</button>
+        <button class="equals" data-action="equals" type="button">=</button>
+        <button data-number="1" type="button">1</button>
+        <button data-number="2" type="button">2</button>
+        <button data-number="3" type="button">3</button>
+        <button class="zero" data-number="0" type="button">0</button>
+        <button data-number="." type="button">.</button>
+      </section>
+    </main>
+    <script src="calculator.js"></script>
+  </body>
+  </html>
